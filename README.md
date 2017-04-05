@@ -51,3 +51,11 @@ Designs here are uploaded with the following document to **minimize friction** f
 
 - [ Board Level
 Electromagnetic Compatibility](http://www.nxp.com/files/microcontrollers/doc/app_note/AN2321.pdf)
+
+- [The Dropout’s Guide to PCB Trace Antenna Design](http://colinkarpfinger.com/blog/2010/the-dropouts-guide-to-antenna-design/)
+
+- [Antenna Design and RF Layout Guidelines](http://www.cypress.com/file/136236/download)
+
+- []()
+
+- []()
