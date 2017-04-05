@@ -1,7 +1,7 @@
-###Open-source hardware design
+### Open-source hardware design
 ----------
 
-####Introduction
+#### Introduction
 
 This repository will contain all the hardware designs by @kennethlimcp.
 
@@ -9,7 +9,7 @@ Temporary project name: **One oshw project per month**
 
 The purpose is to encourage people to **embrace openness** and get more people **interested** in hardware design/hacking.
 
-####Source-tree
+#### Source-tree
 
 Designs here are uploaded with the following document to **minimize friction** for a beginner to get started:
 
@@ -27,13 +27,13 @@ Designs here are uploaded with the following document to **minimize friction** f
 
 - Casing           (more user-friendly and safe to hold)
 
-####Useful writeups (by me)
+#### Useful writeups (by me)
 
 - [Bringing up a new board from scratch](/Resources/bring-up.md)
 - [Checking a new PCB and populating it](/Resources/pcb-checks.md)
 - [EAGLE start off and mistakes](/Resources/eagle-notes.md)
 
-####Resources
+#### Resources
 
 - [Spark Proto2Prod website](http://www.proto2prod.com/)
 
