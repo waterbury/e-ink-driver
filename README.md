@@ -35,6 +35,8 @@ Designs here are uploaded with the following document to **minimize friction** f
 
 #### Resources
 
+- [Hardware product development process](http://conceptspring.com/hardware-product-development-process/)
+
 - [Spark Proto2Prod website](http://www.proto2prod.com/)
 
 - [EAGLE Help](http://web.mit.edu/xavid/arch/i386_rhel4/help/index.htm)
@@ -49,13 +51,10 @@ Designs here are uploaded with the following document to **minimize friction** f
 
 - [7 fatal pcb mistakes to avoid by Make](http://makezine.com/2016/08/15/7-fatal-mistakes-avoid-printed-circuit-board-pcb-design/)
 
-- [ Board Level
-Electromagnetic Compatibility](http://www.nxp.com/files/microcontrollers/doc/app_note/AN2321.pdf)
+- [Board Level Electromagnetic Compatibility](http://www.nxp.com/files/microcontrollers/doc/app_note/AN2321.pdf)
 
 - [The Dropout’s Guide to PCB Trace Antenna Design](http://colinkarpfinger.com/blog/2010/the-dropouts-guide-to-antenna-design/)
 
 - [Antenna Design and RF Layout Guidelines](http://www.cypress.com/file/136236/download)
-
-- []()
 
 - []()
