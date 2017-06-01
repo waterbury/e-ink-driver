@@ -59,4 +59,6 @@ Designs here are uploaded with the following document to **minimize friction** f
 
 - [Converting Seeed OPL EagleCAD library to KiCad](https://www.seeed.cc/Converting%20Seeed%20OPL%20EagleCAD%20library%20to%20KiCad-p-1990.html)
 
-- [Wireless Protocols for IoT Devices] (http://glowlabs.co/wireless-protocols/)
+- [Wireless Protocols for IoT Devices](http://glowlabs.co/wireless-protocols/)
+
+- [Capacitor temperature and voltage variation](https://www.maximintegrated.com/en/app-notes/index.mvp/id/5527)
