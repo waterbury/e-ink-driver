@@ -62,3 +62,5 @@ Designs here are uploaded with the following document to **minimize friction** f
 - [Wireless Protocols for IoT Devices](http://glowlabs.co/wireless-protocols/)
 
 - [Capacitor temperature and voltage variation](https://www.maximintegrated.com/en/app-notes/index.mvp/id/5527)
+
+- [Minimizing Buck-Boost Converter High-Frequency Switching Noise](http://www.ti.com/lit/an/slva219a/slva219a.pdf)
