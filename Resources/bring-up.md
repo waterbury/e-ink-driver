@@ -1,7 +1,7 @@
 Steps taken
 ---
 
-###Plan out the high level features
+### Plan out the high level features
 
 eg.
 
@@ -10,13 +10,13 @@ eg.
 - Battery management
 - orientation detection
 
-###Select all the key ICs
+### Select all the key ICs
 
 - ensure that parts are source-able
 - study known designs (eg. adafruit, sparkfun, bunniestudios) and evaluate the best IC for that project
 - select the best MCU for the job
 
-###Prepare the project files
+### Prepare the project files
 
 - Follow the current directory tree and create a new forked version
 - start off with a `0.0.1` schematic design
@@ -28,7 +28,7 @@ eg.
 - This will be the best place to kick off!
 - Create them and label the NET with the appropriate voltage values
 
-###Key points
+### Key points
 
 - Decoupling caps everywhere. Every time an IC is placed, a bypass/decoupling Cap should follow next.
 - Think of pins where flexibility is required and use a 0604 0 Ohm resistor.
@@ -37,7 +37,7 @@ eg.
 - Write the `README.md` as you go or even at the beginning of the project so that key features are decided before starting work. This helps me decide which IC containing the required features is used.
 - Write out a checklist on paper and tick them when you are done. Yeah i know digital is cool but pen and paper is rock solid.
 
-###Some dimensions
+### Some dimensions
 
 - For silkscreen, mm, 1.27, 20%, Vector font works great
 - Via, inches, round, Drill 0.01968504, Diameter 0.05
