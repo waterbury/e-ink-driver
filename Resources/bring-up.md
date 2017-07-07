@@ -24,7 +24,7 @@ eg.
 - create the global attributes (CNAME, CREVISION, DESIGNER)
 - give that page a description of what it contains
 
-###Start off laying out the power module
+### Start off laying out the power module
 - This will be the best place to kick off!
 - Create them and label the NET with the appropriate voltage values
 
