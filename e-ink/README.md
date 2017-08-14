@@ -1,7 +1,7 @@
-#Wifi E-ink display
+Wifi E-ink display
 ----------
 
-###Introduction
+### Introduction
 
 The main motivation for this device comes from the regular use of 16x2 or nokia old-style LCD display. They are nice but too small for a sizeable project that requires a simple but viewable display from a distance.
 
@@ -9,18 +9,19 @@ This also challenges me to try out FPC connector that i have never handled befor
 
 The current revision of **V0.0.3** does not work as the I2C GPIO expander is unable to toggle the control pins at `us` resolution so a re-design has to be done. **V0.1.0** is a WIP to improve **V0.0.2** but is only a WIP and is not a working board as well.
 
-![](Images/v002/whole-setup.JPG)
-####Power system
+![eink-board](Images/v002/whole-setup.JPG)
+
+#### Power system
 
 - USB +5V or single cell Li-ion
 - Battery charging and simultaneous system supply
 - 3V3 buck converter for primary rail
 
-#####Input options
+##### Input options
 - microB USB
 - jumper wire (+ and -)
 
-#####E-ink supply notes
+##### E-ink supply notes
 
 A LT1945 DC/DC converter is powered by VBAT from the 1-cell li-ion battery to provide the +22V and -20V required for the Gate supply. The next power stage comprises of a simple LDO (LM78(79)/L15) to generate +15V and -15V for the Source supply. There's a LTSPICE file available in this repository that shows the performance of the LT1945 through simulation. This design comes from the datasheet and the components have been properly sized to have beefy ratings.
 
@@ -28,15 +29,15 @@ There are newer ICs in the market that handles the entire power generation requi
 
 VDD and VSS supply for the e-ink is powered using a GPIO as the current draw (according to the notes) is only 1mA and this allows up to turn off the display for power saving.
 
-The SMPS power input is controlled using a simple P-channel Mosfet load switch technique to cut off supply when it is not required.
+The SMPS power input is controlled using a simple P-channel MOSFET load switch technique to cut off supply when it is not required.
 
-#####Battery power management design
+##### Battery power management design
 
 After much sourcing and finding a part available in the Chinese market, I found the BQ24075 suitable for the job that provides a good mix of features. This IC allows a maximum input voltage of 28V and comes with over-voltage protection! No external inductor is required (compared to BQ24260). There's also 2 status signal that allows the MCU to know if there's an external power source connected and whether the battery is currently charging. This allows us to change the "power mode" of the device with faster go-to-sleep timing when there is not power source attached.
 
 This addition low-cost circuit footprint is added for variety. A MCP7381T is used to charge a single cell Li-ion and the VBAT is directly fed to the system. This, however, does not allow the system to be powered up if a battery is not present.
 
-####Driver design notes
+#### Driver design notes
 
 The e-ink display requires a fair bit of control pins and part of the reason is not fully understanding which pins are in use and necessary for driving. Therefore, to ensure a higher success rate during rev. 0.0.2, consideration is made to hook up all the exposed pins. Pins that are pulled high and low are also wired up with 0 ohm resistors for flexibility to test their purpose or change the pull voltage.
 
@@ -46,7 +47,7 @@ Another design is to use a separate MCU that connects directly to all the pins a
 
 The GPIO expander design is implemented for the initial rev to bring up the board with a Spark Core/Photon that is a beefier Arduino variant that allows us to avoid the low level path for now. Using an external MCU would definitely be a better path to take in future revisions. INT pins are not wired up as all the pins are used as OUTPUT.
 
-####Peripherals
+#### Peripherals
 
 These are implemented in rev 0.0.2:
 
@@ -61,18 +62,18 @@ future considerations:
 - light sensor for ambience detection
 
 
-####Casing
+#### Casing
 
 A laser cut casing would be great to house a useful demonstration set and avoid risk of damaging it from the hands of others!
 
-####Future expansion
+#### Future expansion
 
 - Use e-ink display driver IC
 - Add in IR touch sensing technology used in latest Kindle
 - Backlight will be awesome much
 
 
-####Lessons learnt
+#### Lessons learnt
 
 - Creating new footprints confidently (39-pin FPC connector, QFN-20)
 - ULP script "bom.ulp" available to generate the BOM for a project. Makes it easier to manage the ever changing list of components
@@ -103,7 +104,7 @@ A laser cut casing would be great to house a useful demonstration set and avoid 
 - R0xx should be wired to +3V3 instead of EINK_VDD
 - some issue with +20v where voltage is present even when disabled
 
-####Resources
+#### Resources
 
 Understanding the wiring for e-ink display would not be possible with the information shared by two pro open-source gentlemen.
 
@@ -128,7 +129,7 @@ Understanding the wiring for e-ink display would not be possible with the inform
 - [PVI docs](http://wenku.baidu.com/view/c54385ea6294dd88d0d26b94.html)
 - [Epson ppt](http://wenku.baidu.com/view/e451453567ec102de2bd8908.html)
 
-Appnote
+#### Appnote
 
 - MOSFETS in load switch applications(AND9093D)
 - Reverse current/battery protection circuit (SLVA139)
