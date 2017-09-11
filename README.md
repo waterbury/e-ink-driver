@@ -64,3 +64,5 @@ Designs here are uploaded with the following document to **minimize friction** f
 - [Capacitor temperature and voltage variation](https://www.maximintegrated.com/en/app-notes/index.mvp/id/5527)
 
 - [Minimizing Buck-Boost Converter High-Frequency Switching Noise](http://www.ti.com/lit/an/slva219a/slva219a.pdf)
+
+- [CAN-bus Common High Speed Physical Layer Problems](https://vector.com/portal/medien/cmc/application_notes/AN-ANI-1-115_HS_Physical_Layer_Problems.pdf)
