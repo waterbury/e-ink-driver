@@ -26,3 +26,7 @@ Purchase UL 94
 
 Material:
 - [UL PCB Recognition](https://www.ncabgroup.com/wp-content/uploads/2015/03/UL-Emma-Hudson-NCAB-Seminar-2015-03.pdf)
+
+#### Manufacturing
+
+- [IPC-A-610 Acceptability of Electronics Assemblies Training and Certification Program](http://www.ipc.org/ContentPage.aspx?pageid=IPC-A-610)
