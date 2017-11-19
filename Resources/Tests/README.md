@@ -9,5 +9,6 @@
 - Shock and vibration
 - EMC / EMI
 - UL
-- [Ex] (ATEX Equipment Directive 2014/34/EU)
+- Ex (ATEX Equipment Directive 2014/34/EU)
 - DNV
+- Burn-in
