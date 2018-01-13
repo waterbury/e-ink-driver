@@ -27,6 +27,9 @@ Purchase UL 94
 Material:
 - [UL PCB Recognition](https://www.ncabgroup.com/wp-content/uploads/2015/03/UL-Emma-Hudson-NCAB-Seminar-2015-03.pdf)
 
+
+#### Specification
+- (MIL-PRF-38535 United States military specification)[https://en.wikipedia.org/wiki/MIL-PRF-38535]
 #### Manufacturing
 
 - [IPC-A-610 Acceptability of Electronics Assemblies Training and Certification Program](http://www.ipc.org/ContentPage.aspx?pageid=IPC-A-610)
