@@ -29,11 +29,12 @@ Material:
 
 
 #### Specification
-- (MIL-PRF-38535 United States military specification)[https://en.wikipedia.org/wiki/MIL-PRF-38535]
+- [MIL-PRF-38535 United States military specification](https://en.wikipedia.org/wiki/MIL-PRF-38535)
+
 #### Manufacturing
 
 - [IPC-A-610 Acceptability of Electronics Assemblies Training and Certification Program](http://www.ipc.org/ContentPage.aspx?pageid=IPC-A-610)
-Solder Paste Inspection, Automated Optical Inspection and X-ray examination are all carried out during manufacture followed by PCB testing and finally burn in testing 
+- Solder Paste Inspection, Automated Optical Inspection and X-ray examination are all carried out during manufacture followed by PCB testing and finally burn in testing 
 
 #### Quality
 - [ISO 9001:2015](https://www.iso.org/iso-9001-quality-management.html)
