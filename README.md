@@ -3,31 +3,9 @@
 
 #### Introduction
 
-This repository will contain all the hardware designs by @kennethlimcp.
+E-ink driver board based on designs by @kennethlimcp and others.
 
-Temporary project name: **One oshw project per month**
-
-The purpose is to encourage people to **embrace openness** and get more people **interested** in hardware design/hacking.
-
-#### Source-tree
-
-Designs here are uploaded with the following document to **minimize friction** for a beginner to get started:
-
-- Schematic design (EAGLE CAD)
-
-- GERBER file      (fabricate PCB immediately)
-
-- BOM list         (widely available parts + changelog)
-
-- PDF capture      (learn without Schematic software)
-
-- Datasheet        (easy reference without searching)
-
-- Appnote          (deeper learning and understanding)
-
-- Casing           (more user-friendly and safe to hold)
-
-#### Useful writeups (by me)
+#### Useful writeups 
 
 - [Bringing up a new board from scratch](/Resources/bring-up.md)
 - [Checking a new PCB and populating it](/Resources/pcb-checks.md)
