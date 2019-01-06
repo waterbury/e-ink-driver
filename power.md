@@ -9,12 +9,17 @@
 | VDD  | +2.8V |   +3.3V | +3.6V |
 | VNEG |  -17V |    -15V |   -9V |
 | VCOM | -2.5V |         | -0.5V |
-|      |       |         |       |
-|      |       |         |       |
 
+Power on sequence
+1. VDD
+2. VNEG, GVEE
+3. VPOS
+4. Input Signals, GVDD
 
-Power on sequence  :    VDD -> VNEG, GVEE -> VPOS -> Input Signals, GVDD
-Power off sequence :    Input Signals -> GVEE, VGDD, VPOS, VNEG -> VDD
+Power off sequence
+1. Input Signals
+2. GVEE, VGDD, VPOS, VNEG
+3. VDD
 
 I _THINK_ the datasheet is trying to say that the timing gap between rails is >= 5ms and <= 100ms
 
