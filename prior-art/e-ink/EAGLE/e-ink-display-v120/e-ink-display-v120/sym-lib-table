@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name e-ink-display-v120-eagle-import)(type Legacy)(uri ${KIPRJMOD}/e-ink-display-v120-eagle-import.lib)(options "")(descr ""))
+)

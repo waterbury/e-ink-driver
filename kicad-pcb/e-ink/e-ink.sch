@@ -1,0 +1,484 @@
+EESchema Schematic File Version 4
+LIBS:e-ink-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LT1945 U?
+U 1 1 5C3AE1F1
+P 3750 3700
+F 0 "U?" H 3750 4267 50  0000 C CNN
+F 1 "LT1945" H 3750 4176 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 3800 3450 50  0001 L CNN
+F 3 "https://cds.linear.com/docs/en/datasheet/1945fa.pdf" H 3850 3700 50  0001 C CNN
+	1    3750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C3AE32B
+P 3700 4000
+F 0 "#PWR?" H 3700 3750 50  0001 C CNN
+F 1 "GND" H 3705 3827 50  0000 C CNN
+F 2 "" H 3700 4000 50  0001 C CNN
+F 3 "" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4000 3700 4000
+$Comp
+L Device:C C?
+U 1 1 5C3AE646
+P 4750 3650
+F 0 "C?" H 4865 3696 50  0000 L CNN
+F 1 "0.1uF" H 4865 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4788 3500 50  0001 C CNN
+F 3 "~" H 4750 3650 50  0001 C CNN
+	1    4750 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C3AE83F
+P 4600 5100
+F 0 "C?" H 4718 5146 50  0000 L CNN
+F 1 "CP" H 4718 5055 50  0000 L CNN
+F 2 "" H 4638 4950 50  0001 C CNN
+F 3 "~" H 4600 5100 50  0001 C CNN
+	1    4600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5C3AEEC9
+P 4150 5100
+F 0 "L?" H 4203 5146 50  0000 L CNN
+F 1 "22uH" H 4203 5055 50  0000 L CNN
+F 2 "" H 4150 5100 50  0001 C CNN
+F 3 "~" H 4150 5100 50  0001 C CNN
+	1    4150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5C3AEFFA
+P 5150 3650
+F 0 "D?" V 5104 3729 50  0000 L CNN
+F 1 "D_Schottky" V 5195 3729 50  0000 L CNN
+F 2 "" H 5150 3650 50  0001 C CNN
+F 3 "~" H 5150 3650 50  0001 C CNN
+	1    5150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C3AEDBA
+P 2650 3600
+F 0 "R?" V 2600 3400 50  0000 L CNN
+F 1 "0" V 2600 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2690 3590 50  0001 C CNN
+F 3 "~" H 2650 3600 50  0001 C CNN
+	1    2650 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5C3AF799
+P 5250 2200
+F 0 "TP?" V 5055 2274 50  0000 C CNN
+F 1 "TestPoint" V 5146 2274 50  0000 C CNN
+F 2 "" H 5450 2200 50  0001 C CNN
+F 3 "~" H 5450 2200 50  0001 C CNN
+	1    5250 2200
+	0    -1   1    0   
+$EndComp
+Text Label 2850 3400 0    50   ~ 0
++5V
+$Comp
+L Device:L L?
+U 1 1 5C3B1AFA
+P 4550 3850
+F 0 "L?" H 4603 3896 50  0000 L CNN
+F 1 "22uH" H 4603 3805 50  0000 L CNN
+F 2 "" H 4550 3850 50  0001 C CNN
+F 3 "~" H 4550 3850 50  0001 C CNN
+	1    4550 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3600 4150 3600
+Wire Wire Line
+	4150 3500 4550 3500
+Text Label 4400 3400 2    50   ~ 0
+FB2
+Text Label 4400 3700 2    50   ~ 0
+NFB1
+Wire Wire Line
+	4150 3700 4400 3700
+Wire Wire Line
+	4150 3400 4400 3400
+Connection ~ 3700 4000
+Wire Wire Line
+	3700 4000 3750 4000
+Wire Wire Line
+	4550 3600 4550 3650
+$Comp
+L Device:D_Schottky D?
+U 1 1 5C3C3A58
+P 5150 3450
+F 0 "D?" V 5104 3529 50  0000 L CNN
+F 1 "D_Schottky" V 5195 3529 50  0000 L CNN
+F 2 "" H 5150 3450 50  0001 C CNN
+F 3 "~" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5C3B1818
+P 4550 3250
+F 0 "L?" H 4603 3296 50  0000 L CNN
+F 1 "22uH" H 4603 3205 50  0000 L CNN
+F 2 "" H 4550 3250 50  0001 C CNN
+F 3 "~" H 4550 3250 50  0001 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3400 4550 3450
+Wire Wire Line
+	5000 3450 4550 3450
+Connection ~ 4550 3450
+Wire Wire Line
+	4550 3450 4550 3500
+Wire Wire Line
+	4550 3650 4600 3650
+Wire Wire Line
+	4550 3700 4550 3650
+Connection ~ 4550 3650
+Text Label 2850 3600 0    50   ~ 0
+POS_EN
+Text Label 2850 3500 0    50   ~ 0
+NEG_EN
+Wire Wire Line
+	2850 3400 3350 3400
+Text Label 4350 4050 0    50   ~ 0
++5V
+Text Label 4400 3050 0    50   ~ 0
++5
+Wire Wire Line
+	4400 3050 4550 3050
+Wire Wire Line
+	4350 4050 4550 4050
+Text Notes 2100 2100 0    50   ~ 10
+NEEDS CONNECTION TO REAL VOLTAGE
+$Comp
+L Device:R_US R?
+U 1 1 5C3C7E55
+P 2650 3500
+F 0 "R?" V 2700 3300 50  0000 L CNN
+F 1 "0" V 2700 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2690 3490 50  0001 C CNN
+F 3 "~" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2800 3500 3350 3500
+Wire Wire Line
+	2450 3550 2350 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5C3C83A1
+P 2350 3550
+F 0 "#PWR?" H 2350 3300 50  0001 C CNN
+F 1 "GND" H 2355 3377 50  0000 C CNN
+F 2 "" H 2350 3550 50  0001 C CNN
+F 3 "" H 2350 3550 50  0001 C CNN
+	1    2350 3550
+	-1   0    0    -1  
+$EndComp
+Text Notes 2450 3850 0    50   ~ 0
+Populate these to have\nsupplies always on
+Wire Wire Line
+	2450 3600 2450 3550
+Wire Wire Line
+	2450 3500 2500 3500
+Connection ~ 2450 3550
+Wire Wire Line
+	2450 3550 2450 3500
+$Comp
+L Device:D_Schottky D?
+U 1 1 5C3CBAA0
+P 4950 3850
+F 0 "D?" V 4904 3929 50  0000 L CNN
+F 1 "D_Schottky" V 4995 3929 50  0000 L CNN
+F 2 "" H 4950 3850 50  0001 C CNN
+F 3 "~" H 4950 3850 50  0001 C CNN
+	1    4950 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3650 4950 3650
+Wire Wire Line
+	4950 3700 4950 3650
+Connection ~ 4950 3650
+Wire Wire Line
+	4950 3650 5000 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5C3CD1BA
+P 4950 4050
+F 0 "#PWR?" H 4950 3800 50  0001 C CNN
+F 1 "GND" H 4955 3877 50  0000 C CNN
+F 2 "" H 4950 4050 50  0001 C CNN
+F 3 "" H 4950 4050 50  0001 C CNN
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4000 4950 4050
+Text Label 5100 3250 0    50   ~ 0
++22V
+$Comp
+L Device:R_US R?
+U 1 1 5C3CFC0C
+P 5600 3450
+F 0 "R?" V 5550 3550 50  0000 L CNN
+F 1 "560k" V 5550 3150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5640 3440 50  0001 C CNN
+F 3 "~" H 5600 3450 50  0001 C CNN
+	1    5600 3450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2800 3600 3350 3600
+Wire Wire Line
+	2450 3600 2500 3600
+Wire Wire Line
+	4550 3050 4550 3100
+Wire Wire Line
+	4550 4050 4550 4000
+Text Label 6150 3250 2    50   ~ 0
+FB2
+$Comp
+L power:GND #PWR?
+U 1 1 5C3D6C54
+P 6650 3650
+F 0 "#PWR?" H 6650 3400 50  0001 C CNN
+F 1 "GND" H 6655 3477 50  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3450 6550 3450
+$Comp
+L Device:R_US R?
+U 1 1 5C3D8739
+P 5600 3650
+F 0 "R?" V 5550 3750 50  0000 L CNN
+F 1 "470k" V 5550 3350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5640 3640 50  0001 C CNN
+F 3 "~" H 5600 3650 50  0001 C CNN
+	1    5600 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5300 3650 5350 3650
+$Comp
+L Device:R_US R?
+U 1 1 5C3D8E3F
+P 6150 3650
+F 0 "R?" V 6100 3700 50  0000 L CNN
+F 1 "33k" V 6100 3400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6190 3640 50  0001 C CNN
+F 3 "~" H 6150 3650 50  0001 C CNN
+	1    6150 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5900 3650 5900 3900
+Text Label 6150 3900 2    50   ~ 0
+NFB1
+Wire Wire Line
+	6550 3650 6300 3650
+Wire Wire Line
+	5750 3450 5900 3450
+Wire Wire Line
+	5900 3450 5900 3250
+Text Label 5100 3900 0    50   ~ 0
+-20V
+Wire Wire Line
+	5900 3900 6150 3900
+Wire Wire Line
+	5300 3450 5350 3450
+Wire Wire Line
+	5900 3250 6150 3250
+Wire Wire Line
+	6550 3650 6550 3550
+Wire Wire Line
+	6550 3550 6650 3550
+Wire Wire Line
+	6650 3550 6650 3650
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3550 6550 3450
+Wire Wire Line
+	5350 3450 5350 3250
+Wire Wire Line
+	5350 3250 5100 3250
+Wire Wire Line
+	5350 3900 5100 3900
+Connection ~ 5350 3650
+Wire Wire Line
+	5350 3650 5450 3650
+Connection ~ 5350 3450
+Wire Wire Line
+	5350 3450 5450 3450
+Connection ~ 5900 3450
+Wire Wire Line
+	5900 3450 6000 3450
+Connection ~ 5900 3650
+Wire Wire Line
+	5900 3650 5750 3650
+Wire Wire Line
+	5900 3650 6000 3650
+$Comp
+L Device:R_US R?
+U 1 1 5C3FD87B
+P 6150 3450
+F 0 "R?" V 6100 3500 50  0000 L CNN
+F 1 "33k" V 6100 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6190 3440 50  0001 C CNN
+F 3 "~" H 6150 3450 50  0001 C CNN
+	1    6150 3450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5350 3650 5350 3900
+$Comp
+L Device:C C?
+U 1 1 5C4131CB
+P 5600 4050
+F 0 "C?" V 5550 4150 50  0000 L CNN
+F 1 "100pF" V 5550 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5638 3900 50  0001 C CNN
+F 3 "~" H 5600 4050 50  0001 C CNN
+	1    5600 4050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5350 3900
+Wire Wire Line
+	5750 4050 6550 4050
+Wire Wire Line
+	6550 4050 6550 3650
+Connection ~ 6550 3650
+$Comp
+L Device:C C?
+U 1 1 5C415652
+P 5600 3100
+F 0 "C?" V 5650 3200 50  0000 L CNN
+F 1 "4.7pF" V 5650 2800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5638 2950 50  0001 C CNN
+F 3 "~" H 5600 3100 50  0001 C CNN
+	1    5600 3100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5350 3250
+Connection ~ 6550 3450
+Wire Wire Line
+	5350 3900 5350 4050
+Wire Wire Line
+	5350 4050 5450 4050
+Wire Wire Line
+	5350 3100 5450 3100
+Wire Wire Line
+	5350 3100 5350 3250
+Wire Wire Line
+	5750 3100 6550 3100
+Wire Wire Line
+	6550 3100 6550 3450
+Text Label 5450 2200 2    50   ~ 0
++22V
+Wire Wire Line
+	5250 2200 5450 2200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5C4334DD
+P 5250 2300
+F 0 "TP?" V 5055 2374 50  0000 C CNN
+F 1 "TestPoint" V 5146 2374 50  0000 C CNN
+F 2 "" H 5450 2300 50  0001 C CNN
+F 3 "~" H 5450 2300 50  0001 C CNN
+	1    5250 2300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5250 2300 5450 2300
+Text Label 5450 2300 2    50   ~ 0
+-20V
+$Comp
+L power:GND #PWR?
+U 1 1 5C435EE7
+P 5450 2400
+F 0 "#PWR?" H 5450 2150 50  0001 C CNN
+F 1 "GND" H 5455 2227 50  0000 C CNN
+F 2 "" H 5450 2400 50  0001 C CNN
+F 3 "" H 5450 2400 50  0001 C CNN
+	1    5450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5C4361EA
+P 5250 2400
+F 0 "TP?" V 5055 2474 50  0000 C CNN
+F 1 "TestPoint" V 5146 2474 50  0000 C CNN
+F 2 "" H 5450 2400 50  0001 C CNN
+F 3 "~" H 5450 2400 50  0001 C CNN
+	1    5250 2400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5250 2400 5450 2400
+Text Label 5450 2100 2    50   ~ 0
++5V
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5C4389CF
+P 5250 2100
+F 0 "TP?" V 5055 2174 50  0000 C CNN
+F 1 "TestPoint" V 5146 2174 50  0000 C CNN
+F 2 "" H 5450 2100 50  0001 C CNN
+F 3 "~" H 5450 2100 50  0001 C CNN
+	1    5250 2100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5450 2100 5250 2100
+$Comp
+L Regulator_Linear:LM79L15_TO92 U?
+U 1 1 5C449DCE
+P 2900 5050
+F 0 "U?" H 2900 4900 50  0000 C CNN
+F 1 "LM79L15_TO92" H 2900 4809 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2900 4850 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm79l.pdf" H 2900 5050 50  0001 C CNN
+	1    2900 5050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
