@@ -14,4 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 3250 3100 0    50   ~ 0
+Make the 74LCX16244MTDX so Ted stops bitching...\n\nhttps://www.digikey.com/product-detail/en/on-semiconductor/74LCX16244MTDX/74LCX16244MTDXCT-ND/1626157
 $EndSCHEMATC
