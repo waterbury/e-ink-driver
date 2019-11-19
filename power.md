@@ -23,3 +23,6 @@ Power off sequence
 
 I _THINK_ the datasheet is trying to say that the timing gap between rails is >= 5ms and <= 100ms
 
+Basically, I think we should either 
+(a) assume the shit magically starts up in order
+(b) don't apply _any_ power to the display unless a sufficiently long period of time has passed

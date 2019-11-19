@@ -15,119 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L custom:74LCX16244M U6
-U 1 1 5C73E360
-P 3300 1450
-F 0 "U6" H 3550 1615 50  0000 C CNN
-F 1 "74LCX16244M" H 3550 1524 50  0000 C CNN
-F 2 "" H 2750 -1250 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/74LCX16244-D.pdf" H 3300 -2900 50  0001 C CNN
-	1    3300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR048
-U 1 1 5C734C9C
-P 3100 1500
-F 0 "#PWR048" H 3100 1350 50  0001 C CNN
-F 1 "+3.3V" H 3115 1673 50  0000 C CNN
-F 2 "" H 3100 1500 50  0001 C CNN
-F 3 "" H 3100 1500 50  0001 C CNN
-	1    3100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 1850 3100 1850
-Wire Wire Line
-	3100 1850 3100 1750
-Wire Wire Line
-	3200 1750 3100 1750
-Connection ~ 3100 1750
-Wire Wire Line
-	3100 1750 3100 1650
-Wire Wire Line
-	3200 1650 3100 1650
-Connection ~ 3100 1650
-Wire Wire Line
-	3100 1650 3100 1550
-Wire Wire Line
-	3200 1550 3100 1550
-Connection ~ 3100 1550
-Wire Wire Line
-	3100 1550 3100 1500
-$Comp
-L power:GND #PWR061
-U 1 1 5C734D5E
-P 3950 5400
-F 0 "#PWR061" H 3950 5150 50  0001 C CNN
-F 1 "GND" H 3955 5227 50  0000 C CNN
-F 2 "" H 3950 5400 50  0001 C CNN
-F 3 "" H 3950 5400 50  0001 C CNN
-	1    3950 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 4650 3950 4650
-Wire Wire Line
-	3950 4650 3950 4750
-Wire Wire Line
-	3900 4750 3950 4750
-Connection ~ 3950 4750
-Wire Wire Line
-	3950 4750 3950 4850
-Wire Wire Line
-	3900 4850 3950 4850
-Connection ~ 3950 4850
-Wire Wire Line
-	3950 4850 3950 4950
-Wire Wire Line
-	3900 4950 3950 4950
-Connection ~ 3950 4950
-Wire Wire Line
-	3950 4950 3950 5050
-Wire Wire Line
-	3900 5050 3950 5050
-Connection ~ 3950 5050
-Wire Wire Line
-	3900 5150 3950 5150
-Wire Wire Line
-	3950 5050 3950 5150
-Connection ~ 3950 5150
-Wire Wire Line
-	3950 5150 3950 5250
-Wire Wire Line
-	3900 5250 3950 5250
-Connection ~ 3950 5250
-Wire Wire Line
-	3950 5250 3950 5350
-Wire Wire Line
-	3900 5350 3950 5350
-Connection ~ 3950 5350
-Wire Wire Line
-	3950 5350 3950 5400
-$Comp
-L Interface_Expansion:MCP23S17_SO U7
-U 1 1 5C7363BB
-P 6500 2550
-F 0 "U7" H 6050 3500 50  0000 C CNN
-F 1 "MCP23S17_SO" H 6800 1600 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 6700 1550 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 6700 1450 50  0001 L CNN
-	1    6500 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR047
-U 1 1 5C736531
-P 6500 1450
-F 0 "#PWR047" H 6500 1300 50  0001 C CNN
-F 1 "+3.3V" H 6515 1623 50  0000 C CNN
-F 2 "" H 6500 1450 50  0001 C CNN
-F 3 "" H 6500 1450 50  0001 C CNN
-	1    6500 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR057
 U 1 1 5C7365E2
 P 6500 3650
@@ -138,7 +25,7 @@ F 3 "" H 6500 3650 50  0001 C CNN
 	1    6500 3650
 	1    0    0    -1  
 $EndComp
-Text Label 7400 4450 0    50   ~ 0
+Text Label 7600 3250 2    50   ~ 0
 GMODE
 $Comp
 L Connector:Conn_01x39_Female J1
@@ -207,9 +94,9 @@ Text Label 9100 4900 0    50   ~ 0
 U1CE1
 Text Label 9100 5200 0    50   ~ 0
 VBORDER
-Text Label 7400 4550 0    50   ~ 0
+Text Label 7600 3150 2    50   ~ 0
 CKV
-Text Label 7400 4350 0    50   ~ 0
+Text Label 7600 3050 2    50   ~ 0
 SPV
 $Comp
 L power:GND #PWR?
@@ -225,13 +112,13 @@ F 3 "" H 8550 2100 50  0001 C CNN
 	1    8550 2100
 	1    0    0    -1  
 $EndComp
-Text Label 7400 4650 0    50   ~ 0
+Text Label 7600 2650 2    50   ~ 0
 CL
-Text Label 7400 4750 0    50   ~ 0
+Text Label 7600 2750 2    50   ~ 0
 LE
-Text Label 7400 4850 0    50   ~ 0
+Text Label 7600 2850 2    50   ~ 0
 OE
-Text Label 7400 4150 0    50   ~ 0
+Text Label 7600 2950 2    50   ~ 0
 SPH
 Wire Wire Line
 	9450 4200 9450 4300
@@ -502,4 +389,91 @@ Text Notes 6950 6200 0    50   ~ 0
 SPV - Start pulse gate driver
 Text Notes 6950 6300 0    50   ~ 0
 CKV - Clock gate driver
+$Comp
+L power:+3.3V #PWR047
+U 1 1 5C736531
+P 6500 1450
+F 0 "#PWR047" H 6500 1300 50  0001 C CNN
+F 1 "+3.3V" H 6515 1623 50  0000 C CNN
+F 2 "" H 6500 1450 50  0001 C CNN
+F 3 "" H 6500 1450 50  0001 C CNN
+	1    6500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23S17_SO U7
+U 1 1 5C7363BB
+P 6500 2550
+F 0 "U7" H 6050 3500 50  0000 C CNN
+F 1 "MCP23S17_SO" H 6800 1600 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 6700 1550 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 6700 1450 50  0001 L CNN
+	1    6500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1750 7200 1750
+Wire Wire Line
+	7600 1850 7200 1850
+Wire Wire Line
+	7600 1950 7200 1950
+Wire Wire Line
+	7600 2250 7200 2250
+Wire Wire Line
+	7600 2350 7200 2350
+Wire Wire Line
+	7600 2450 7200 2450
+Text Label 7600 2450 2    50   ~ 0
+D7
+Text Label 7600 2350 2    50   ~ 0
+D6
+Text Label 7600 2250 2    50   ~ 0
+D5
+Text Label 7600 2150 2    50   ~ 0
+D4
+Text Label 7600 2050 2    50   ~ 0
+D3
+Text Label 7600 1950 2    50   ~ 0
+D2
+Text Label 7600 1850 2    50   ~ 0
+D1
+Text Label 7600 1750 2    50   ~ 0
+D0
+Wire Wire Line
+	7600 2150 7200 2150
+Wire Wire Line
+	7600 2050 7200 2050
+Wire Wire Line
+	8200 3250 7850 3250
+Wire Wire Line
+	8200 3150 7850 3150
+Text Label 8200 3150 2    50   ~ 0
+NEG_EN
+Text Label 8200 3250 2    50   ~ 0
+POS_EN
+Wire Wire Line
+	7200 2650 7600 2650
+Wire Wire Line
+	7200 2750 7600 2750
+Wire Wire Line
+	7200 2850 7600 2850
+Wire Wire Line
+	7200 2950 7600 2950
+Wire Wire Line
+	7200 3050 7600 3050
+Wire Wire Line
+	7200 3150 7600 3150
+Wire Wire Line
+	7200 3250 7600 3250
+$Comp
+L Interface_Expansion:MCP23S17_SO U?
+U 1 1 5DE280B8
+P 5350 5100
+F 0 "U?" H 4900 6050 50  0000 C CNN
+F 1 "MCP23S17_SO" H 5650 4150 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5550 4100 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5550 4000 50  0001 L CNN
+	1    5350 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
