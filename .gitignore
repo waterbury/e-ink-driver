@@ -1,9 +1,11 @@
 #Mac-OSx specific
 .DS_Store	
 
-# Ignore list for Eagle, a PCB layout tool
+# Ignore list for KiCad backup files and autosave files
+*.*-bak
+_autosave*
 
-# Backup files
+# Ignore List for Eagle PCB Backup files
 *.s#?
 *.b#?
 *.l#?
