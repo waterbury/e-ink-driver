@@ -25,7 +25,7 @@ swedishhat has a bunch of these: http://wiki.ai-thinker.com/esp32-s
 
 - [3D Board viewer](http://3dbrdviewer.cytec.bg/)
 
-- [KiCad Software](http://www.kicad-pcb.org/)
+- [KiCad Software](http://www.kicad.org/)
 
 - [Systematic PCB verification](https://engineering.purdue.edu/ece477/Resources/SystematicPCBVerification.pdf)
 
