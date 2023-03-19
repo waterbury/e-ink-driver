@@ -3,7 +3,7 @@
 
 #### Introduction
 
-E-ink driver board based on designs by @kennethlimcp and others.
+E-ink driver board based on designs by @kennethlimcp and others..
 
 swedishhat has a bunch of these: http://wiki.ai-thinker.com/esp32-s
 
